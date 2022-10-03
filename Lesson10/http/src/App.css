@@ -1,0 +1,62 @@
+.App {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+header {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* ========================= */
+.App-main form {
+	margin: 20px 0;
+}
+.App-main form input {
+	width: 100%;
+	border: 0;
+	border-bottom: 1px solid gray;
+	outline: 0;
+	font-size: 20px;
+}
+
+/* ========================= */
+
+.App-main .todo-list ul {
+	list-style: none;
+	padding: 0;
+}
+.App-main .todo-list ul .todo-item:not(:last-child) {
+	margin-bottom: 10px;
+}
+.App-main .todo-list ul .todo-item .row {
+	display: flex;
+	align-items: center;
+	margin: 0 0 5px;
+	gap: 10px;
+	cursor: pointer;
+	user-select: none;
+}
+.App-main .todo-list ul .todo-item p {
+	margin: 0;
+}
+.App-main .todo-list ul .todo-item .content.true {
+	text-decoration: line-through;
+}
+.App-main .todo-list ul .todo-item .choose {
+	width: 10px;
+	height: 10px;
+	border: 1px solid gray;
+	border-radius: 50%;
+}
+.App-main .todo-list ul .todo-item .choose.true {
+	background-color: blue;
+}
+
+/* ================ */
+footer {
+	display: flex;
+	justify-content: space-between;
+	color: gray;
+}
